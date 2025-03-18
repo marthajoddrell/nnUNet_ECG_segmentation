@@ -54,6 +54,11 @@ nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
 ```
 nnUNetv2_train DATASET_NAME_OR_ID UNET_CONFIGURATION FOLD
 ```
+Or with GPU (example):
+
+```
+CUDA_VISIBLE_DEVICES=0 nnUNetv2_train 201 2d
+```
 
 6. Make predictions on imagesTs
 
